@@ -9,13 +9,13 @@ class Button:
         
         self.surf = pygame.Surface(self.size)
         self.rect = self.surf.get_rect(center=pos)
-        self.color = "purple"
+        self.color = "white"
         pygame.draw.rect(self.surf,self.color,
         (0,0,self.size[0], self.size[1]), border_radius=30)
         # self.surf.fill(self.color)
         
         self.font = pygame.font.Font(None, 45)
-        self.text = self.font.render(self.name, True, "red")
+        self.text = self.font.render(self.name, 1, "white")
         self.text_rect = self.text.get_rect(center=pos)
         
         
