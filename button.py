@@ -15,7 +15,7 @@ class Button:
         # self.surf.fill(self.color)
         
         self.font = pygame.font.Font(None, 45)
-        self.text = self.font.render(self.name, 1, "white")
+        self.text = self.font.render(self.name, 1, "black")
         self.text_rect = self.text.get_rect(center=pos)
         
         
